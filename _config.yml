@@ -4,7 +4,7 @@
 # IMPORTANT: Set the URL of your site.
 # Set to https://<username>.github.io when hosting on GitHub Pages
 # (unless you are using a custom domain).
-url:                   https://domain.tld
+url:                   https://imgeeae.github.io
 
 # IMPORTANT: Set The "base URL" of your site.
 # When your site sits in a subdirectory, set to /<name of directory>
@@ -16,10 +16,10 @@ baseurl:               ''
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  en
+lang:                  en-us
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Hydejack
+title:                 Ji ae Lim's Blog
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
@@ -38,12 +38,12 @@ keywords:              []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/icons/icon.png
+logo:                  /assets/icons/purple.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
-  name:                <firstname> <lastname>
-  email:               <mail@domain.tld>
+  name:                Ji Ae Lim
+  email:               tomojiae@gmail.com
   # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
@@ -129,7 +129,7 @@ defaults:
 
 # Setting a disqus shortname will enable the comment section on
 # pages with `comments: true` in the front matter.
-# disqus:                <disqus_shortname>
+disqus:                imgeeae
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # tinyletter:            <tinyletter_username>
@@ -206,6 +206,27 @@ hydejack:
   offline:
     enabled:           false
     cache_version:     1
+
+
+# +++++++++ imgeeae settings
+# Travis-CI 설정
+safe: False
+lsi: False
+
+# travis-ci와 연동하는 github username, repository
+username: imgeeae
+repo: GitHubPageMaker
+
+# 사용할 branch명
+branch: master
+
+# compile된 결과가 생성되는 폴더
+# 이 폴더 안으로 운영하는 블로그내용이 컴파일되서 들어간다.
+destination: ./output/
+
+# 위 폴더안의 내용을 github repository에 push해야 함. git submodule로 연결해야 한다.
+production_url: http://imgeeae.github.io/
+source_url: http://github.com/imgeeae/GitHubPageMaker
 
 # Collections
 # ========================================================================================
